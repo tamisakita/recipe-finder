@@ -1,0 +1,22 @@
+/* * {
+    padding: 0;
+    margin: auto;
+} */
+
+header {
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: orange;
+}
+
+
+header h1, p {
+    color: white;
+}
+
+.title {
+    text-align: center;
+    padding: 50px;
+}
