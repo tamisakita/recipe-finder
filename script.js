@@ -17,6 +17,8 @@ searchForm.addEventListener("submit", (e) => {
 });
 
 function searchRecipes() {
+  document.querySelector("#spinner").classList.add("loading");
+
   const uri = `https://api.edamam.com/search?q=${searchQuery}&app_id=${APP_ID}&app_key=${APP_KEY}&from=${
     (currentPage - 1) * pageSize + 1
   }&to=${currentPage * pageSize}`;
@@ -24,11 +26,21 @@ function searchRecipes() {
   fetch(uri)
     .then((res) => res.json())
     .then((data) => {
+      if (data.hits.length === 0) {
+        setTimeout(() => {
+          document.querySelector("#spinner").classList.remove("loading");
+          searchResult.innerHTML =
+            "<p class='alert alert-danger'>No recipes found</p>";
+        }, 500);
+      }
+
       addContainer(data.hits);
       createPagination(data.count);
     })
     .catch((error) => console.log("Error: " + error))
-    .finally(() => {});
+    .finally(() => {
+      document.querySelector("#spinner").classList.remove("loading");
+    });
 }
 
 function addContainer(results) {
