@@ -13,10 +13,19 @@ searchForm.addEventListener("submit", (e) => {
 
   searchQuery = e.target.querySelector("input").value;
 
-  searchRecipes();
+  listRecipes();
 });
 
-function searchRecipes() {
+document.addEventListener("search", () => {
+  searchQuery = document.querySelector("#searchInput").value;
+
+  if (searchQuery === "") {
+    searchResult.innerHTML = null;
+    pagination.innerHTML = "";
+  }
+});
+
+function listRecipes() {
   document.querySelector("#spinner").classList.add("loading");
 
   const uri = `https://api.edamam.com/search?q=${searchQuery}&app_id=${APP_ID}&app_key=${APP_KEY}&from=${
@@ -103,5 +112,5 @@ function createPagination(totalResults) {
 
 function changePage(page) {
   currentPage = page;
-  searchRecipes();
+  listRecipes();
 }
