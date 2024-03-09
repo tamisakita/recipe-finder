@@ -10,6 +10,7 @@ let searchQuery = "";
 let currentPage = 1;
 let pageSize = 10;
 
+// Event listener for form submission that identify the input value and list the recipes by calling the function listRecipes()
 searchForm.addEventListener("submit", (e) => {
   e.preventDefault();
 
@@ -18,16 +19,21 @@ searchForm.addEventListener("submit", (e) => {
   listRecipes();
 });
 
+// Event listener for search event and also verify if the input is empty, it will clean the page
 document.addEventListener("search", () => {
   searchQuery = document.querySelector("#searchInput").value;
 
+  // Clear search result and pagination if the input is empty
   if (searchQuery === "") {
     searchResult.innerHTML = null;
     pagination.innerHTML = "";
     currentPage = 1;
+    container.style.height = "100vh";
   }
 });
 
+// This function will display the list of recipes and pages by fetching data from api edaman and calling the functions addContainer() and createPafination()
+// It will also show a spinner when the page is loading and if there is no recipes, it will show a custom message after the spinner
 function listRecipes() {
   searchResult.innerHTML = "";
 
@@ -40,6 +46,7 @@ function listRecipes() {
   fetch(uri)
     .then((res) => res.json())
     .then((data) => {
+      // Check if any recipes were found
       if (data.hits.length === 0) {
         setTimeout(() => {
           document.querySelector("#spinner").classList.remove("loading");
@@ -48,7 +55,9 @@ function listRecipes() {
         }, 500);
       }
 
+      // Calling function to display each recipe
       addContainer(data.hits);
+      // Calling function to Create pagination based on the total number of recipes
       createPagination(data.count);
     })
     .catch((error) => console.log("Error: " + error))
@@ -57,31 +66,39 @@ function listRecipes() {
     });
 }
 
+// Function to add each card recipe on the container by looping the results(recipes list) and displaying each one with dynamically created page elements
 function addContainer(results) {
   results.forEach((result) => {
+    // Creating the container
     const recipeContainer = document.createElement("div");
     recipeContainer.classList.add("recipe-container", "card", "text-center");
 
+    // Adding image
     const image = document.createElement("img");
     image.classList.add("img-fluid", "rounded");
     image.src = result.recipe.image;
 
+    // Creating the card for each recipe
     const cardBody = document.createElement("div");
     cardBody.classList.add("card-body");
 
+    // Adding Title
     const title = document.createElement("h3");
     title.classList.add("text-wrap", "text-center", "fs-5", "recipe-title");
     title.style.width = "18rem";
     title.textContent = result.recipe.label;
 
+    // Adding container for the button
     const viewRecipeBtnContainer = document.createElement("div");
 
+    // Creating the button that will show more information about the recipe
     const viewRecipeBtn = document.createElement("a");
     viewRecipeBtn.classList.add("btn", "btn-success");
     viewRecipeBtn.href = result.recipe.url;
     viewRecipeBtn.target = "_blank";
     viewRecipeBtn.textContent = "View Recipe";
 
+    // Appending each element to create the structure of the recipe card
     cardBody.appendChild(title);
     recipeContainer.appendChild(image);
     recipeContainer.appendChild(cardBody);
@@ -94,6 +111,7 @@ function addContainer(results) {
   container.style.height = "50vh";
 }
 
+// Function to create the pagination using the parameter totalResult which is the total number of results returned by the API
 function createPagination(totalResults) {
   const totalPages = Math.ceil(totalResults / pageSize);
   let showPage = "";
@@ -103,14 +121,18 @@ function createPagination(totalResults) {
     let startPage = Math.max(1, currentPage - 2);
     let endPage = Math.min(totalPages, startPage + 4);
 
+    // Creation of buttons from pagination nav
+
     // Add previous button
     showPage += `<li class="page-item previous ${
       currentPage === 1 ? "disabled" : ""
-    }"><a class="page-link" href="#" onclick="changePage(${
+    }">
+    <a class="page-link" href="#" onclick="changePage(${
       currentPage - 1
-    })">Previous</a></li>`;
+    })">Previous</a>
+    </li>`;
 
-    // Add page numbers
+    // Add page numbers by looping through the range of page numbers
     for (let i = startPage; i <= endPage; i++) {
       showPage += `<li class="page-item ${
         currentPage === i ? "active" : ""
@@ -130,7 +152,9 @@ function createPagination(totalResults) {
   }
 }
 
+// Function that will be called to handle the page change
 function changePage(page) {
   currentPage = page;
+  // Call the function listRecipes to fetch and display recipes for the new page
   listRecipes();
 }
