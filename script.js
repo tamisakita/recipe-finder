@@ -1,6 +1,8 @@
 const searchForm = document.querySelector("form");
 const searchResult = document.querySelector("#result-container");
 const container = document.querySelector("#container-height");
+const pagination = document.querySelector("#pagination ul");
+
 const APP_ID = "3ac59c47";
 const APP_KEY = "6b4d3971f7d3022076a60100e77805da";
 
@@ -26,6 +28,8 @@ document.addEventListener("search", () => {
 });
 
 function listRecipes() {
+  searchResult.innerHTML = "";
+
   document.querySelector("#spinner").classList.add("loading");
 
   const uri = `https://api.edamam.com/search?q=${searchQuery}&app_id=${APP_ID}&app_key=${APP_KEY}&from=${
@@ -53,29 +57,44 @@ function listRecipes() {
 }
 
 function addContainer(results) {
-  let addedContainer = "";
-  results.map((result) => {
-    addedContainer += `
-        <div class="recipe-container card text-center">
-          <img src="${result.recipe.image}" class="img-fluid rounded"/>
-          <div class="card-body">
-          <h3 class="text-wrap text-center fs-5" style="width: 18rem;">${result.recipe.label}</h3>
-          
-          </div>
-          <div>
-            <a href="${result.recipe.url}" target="_blank" class="btn btn-success">View Recipe</a>
-          </div>
-        </div>
-    `;
+  results.forEach((result) => {
+    const recipeContainer = document.createElement("div");
+    recipeContainer.classList.add("recipe-container", "card", "text-center");
+
+    const image = document.createElement("img");
+    image.classList.add("img-fluid", "rounded");
+    image.src = result.recipe.image;
+
+    const cardBody = document.createElement("div");
+    cardBody.classList.add("card-body");
+
+    const title = document.createElement("h3");
+    title.classList.add("text-wrap", "text-center", "fs-5", "recipe-title");
+    title.style.width = "18rem";
+    title.textContent = result.recipe.label;
+
+    const viewRecipeBtnContainer = document.createElement("div");
+
+    const viewRecipeBtn = document.createElement("a");
+    viewRecipeBtn.classList.add("btn", "btn-success");
+    viewRecipeBtn.href = result.recipe.url;
+    viewRecipeBtn.target = "_blank";
+    viewRecipeBtn.textContent = "View Recipe";
+
+    cardBody.appendChild(title);
+    recipeContainer.appendChild(image);
+    recipeContainer.appendChild(cardBody);
+    viewRecipeBtnContainer.appendChild(viewRecipeBtn);
+    recipeContainer.appendChild(viewRecipeBtnContainer);
+
+    searchResult.appendChild(recipeContainer);
   });
 
   container.style.height = "50vh";
-  searchResult.innerHTML = addedContainer;
 }
 
 function createPagination(totalResults) {
   const totalPages = Math.ceil(totalResults / pageSize);
-  const pagination = document.querySelector("#pagination ul");
   let showPage = "";
 
   if (totalPages > 1) {

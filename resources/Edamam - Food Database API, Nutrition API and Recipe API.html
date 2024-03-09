@@ -1,0 +1,845 @@
+<!DOCTYPE html>
+<!-- saved from url=(0023)https://www.edamam.com/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<title>Edamam - Food Database API, Nutrition API and Recipe API </title>
+		<meta name="description" content="Food database and nutrition data provider to wellness and health applications. Try our Food Database API, Nutrition Analysis API and Recipe Search API.">
+		<meta name="keywords" content="recipes, easy recipes, healthy recipes, food recipes">
+		
+		
+		
+		<meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, width=device-width">
+		
+		<meta name="robots" content="all,index,follow">
+		<meta name="googlebot" content="index,follow,noodp">
+		<meta name="msnbot" content="all,index,follow">
+		
+		<meta name="verify-v1" content="Google Webmaster tools">
+		<meta name="verify-v1" content="Yahoo Site Explorer">
+		<meta name="verify-v1" content="MSN Webmaster Center">
+		
+		<meta name="SKYPE_TOOLBAR" content="SKYPE_TOOLBAR_PARSER_COMPATIBLE">     
+		<meta name="msvalidate.01" content="7F2E64189BDDA591F65C4F5FEA9F9E2F">
+		
+		<meta name="google-signin-scope" content="profile email">
+		<meta name="google-signin-client_id" content="971390188100-4n7h468fk6ihd8i8lddhpamtt793oti6.apps.googleusercontent.com">
+		  
+		<!-- jQuery -->
+		<script src="./Edamam - Food Database API, Nutrition API and Recipe API_files/123456789" async=""></script><script async="" src="./Edamam - Food Database API, Nutrition API and Recipe API_files/fbevents.js"></script><script type="text/javascript" async="" src="./Edamam - Food Database API, Nutrition API and Recipe API_files/analytics.js"></script><script type="text/javascript" async="" src="./Edamam - Food Database API, Nutrition API and Recipe API_files/bat.js"></script><script type="text/javascript" async="" src="./Edamam - Food Database API, Nutrition API and Recipe API_files/destination"></script><script async="" src="./Edamam - Food Database API, Nutrition API and Recipe API_files/gtm.js"></script><script src="./Edamam - Food Database API, Nutrition API and Recipe API_files/jquery-1.11.1.min.js"></script>
+		<!-- Favicons -->
+		<link rel="icon" type="image/png" href="https://www.edamam.comassets/img/favicon-32x32.png" sizes="32x32">
+		<link rel="icon" type="image/png" href="https://www.edamam.comassets/img/favicon-16x16.png" sizes="16x16">
+		<!-- Bootstrap CSS -->
+		<link href="./Edamam - Food Database API, Nutrition API and Recipe API_files/bootstrap.min.css" rel="stylesheet" integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous">
+		<link href="./Edamam - Food Database API, Nutrition API and Recipe API_files/boxicons.min.css" rel="stylesheet">
+
+		<!-- Google Tag Manager -->
+		<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+			new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+			j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+			'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+			})(window,document,'script','dataLayer','GTM-K65MLJG');
+		</script>
+		<!-- End Google Tag Manager -->
+		
+		<!-- Start of edamamhelp Zendesk Widget script -->
+		<script id="ze-snippet" src="./Edamam - Food Database API, Nutrition API and Recipe API_files/snippet.js"></script>
+		<script>
+			window.zESettings = {
+				webWidget: {
+				  color: {
+					theme: '#6ACC00',
+					launcher: '#6ACC00', // This will also update the badge
+					launcherText: '#FFFFFF',
+					button: '#6ACC00',
+					buttonText: '#FFFFFF',
+					header: '#6ACC00',
+					headerText: '#FFFFFF'
+				  }
+				}
+			};
+		</script>
+        <script type="text/javascript">
+			zE('webWidget', 'setLocale', 'en-US');
+		</script>
+		<!-- End of edamamhelp Zendesk Widget script -->
+		
+		<!-- Start of Cookie Dialog -->
+		<script type="text/javascript" src="./Edamam - Food Database API, Nutrition API and Recipe API_files/cookies-consent.min.js"></script>
+		<script type="text/javascript">
+		var options = {
+			title: 'Accept Cookies & Privacy Policy?',
+			message: 'This website uses cookies. We use cookies to ensure that we give you the best experience on our website to personalise content and to analyse our traffic.',
+			delay: 600,
+			expires: 1,
+			link: '/privacy',
+			onAccept: function(){
+				var myPreferences = $.fn.ihavecookies.cookie();
+				console.log('Yay! The following preferences were saved...');
+				console.log(myPreferences);
+			},
+			uncheckBoxes: true,
+			acceptBtnLabel: 'Accept Cookies'
+		}
+		$(document).ready(function() {
+			fetch('https://api.geoapify.com/v1/ipinfo?apiKey=0c45f00b84504964a619708cf4968e1b', { 
+				method: 'GET'
+			})
+				.then(function(response) { return response.json(); })
+				.then(function(json) {
+					if(json.continent.code == 'EU'){
+						$('body').ihavecookies(options);
+					}					
+			});
+		});
+		</script>
+		<!-- End of Cookie Dialog -->
+		<!-- Google tag (gtag.js) -->
+		<script async="" src="./Edamam - Food Database API, Nutrition API and Recipe API_files/js"></script>
+		<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'G-PF5HDQ2L65');
+		</script>
+	<script type="text/javascript" async="" src="./Edamam - Food Database API, Nutrition API and Recipe API_files/f.txt"></script><script src="./Edamam - Food Database API, Nutrition API and Recipe API_files/123456.js" type="text/javascript" async="" data-ueto="ueto_b0d533d01c"></script></head>
+	<body class="home-page notlogged" data-new-gr-c-s-check-loaded="14.1160.0" data-gr-ext-installed="">
+		<header>			<nav class="navbar navbar-light fixed-top pt-0 bg-white main">
+				<div class="container-fluid d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-1 border-bottom">
+					<div class="navbar-header col-md-3 col-6">
+						<div class="navbar-brand">
+							<a href="https://www.edamam.com/"><img src="./Edamam - Food Database API, Nutrition API and Recipe API_files/small-logo.png" class="small pe-2"><img src="./Edamam - Food Database API, Nutrition API and Recipe API_files/logo.png" class="logo"></a>
+						</div>
+					</div>
+					<ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
+						<li class="dropdown">
+							<a href="https://www.edamam.com/#" class="nav-link px-3 link-dark dropdown-toggle" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">Products</a>
+							<ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+								<li><a class="dropdown-item" href="https://developer.edamam.com/edamam-nutrition-api">Nutrition Analysis API</a></li>
+								<li><a class="dropdown-item" href="https://developer.edamam.com/food-database-api">Food Database API</a></li>
+								<li><a class="dropdown-item" href="https://developer.edamam.com/edamam-recipe-api">Recipe Search API</a></li>
+								<li><a class="dropdown-item" href="https://developer.edamam.com/recipe-content-management-api">Recipe Content Management API</a></li>
+								<li><a class="dropdown-item" href="https://developer.edamam.com/food-analytics-recipe-trend-analysis">Food Analytics Data</a></li>
+								<li><a class="dropdown-item" href="https://developer.edamam.com/meal-planner-api">Meal Planner API (beta)</a></li>
+								<li><a class="dropdown-item" href="https://developer.edamam.com/recipe-database-licensing">Recipe Licensing</a></li>
+							</ul>							
+						</li>
+						<li><a href="https://www.edamam.com/wizard" class="nav-link px-3 link-dark">Nutrition Wizard</a></li>
+						<li><a href="https://www.edamam.com/results/recipes/?search=salad" class="nav-link px-3 link-dark">Recipes</a></li>
+						<li><a href="https://www.edamam.com/partners" class="nav-link px-3 link-dark">Partners</a></li>
+					</ul>
+					<div class="col-md-3 col-6 text-end">
+						<button type="button" id="signup" class="btn btn-green me-2 px-3 get-started">Signup API</button>
+						<button type="button" id="login" class="btn btn-gray px-3 me-xxl-4 login">Login</button>
+						<button class="navbar-toggler ms-xxl-3 ms-2" data-bs-toggle="offcanvas" data-bs-target="#offcanvas">
+							<span class="navbar-toggler-icon" data-bs-toggle="offcanvas" data-bs-target="#offcanvas"></span>
+						</button>
+					</div>
+				</div>
+			</nav>		</header>
+		<main>			<div class="px-4 py-5 text-center bgr-home">
+				<h1 class="display-5 fw-bold home-title col-8 mx-auto">Leading provider of nutrition data and analytics</h1>
+				
+				<div class="col-lg-8 mx-auto">
+					<!-- div class="row banner">
+						<a href="/ai-chatbot-assistant/"><img src="assets/img/v.2.0/ai-assistant-2x.png"></a>
+						NEW!!! Submit queries to our APIs in a natural language with our new AI Assistant
+					</div -->
+					<a class="abanner" href="https://www.edamam.com/ai-chatbot-assistant/">
+						<div class="row banner">
+							<div class="col-0 col-sm-3 col-md-2">
+								<img src="./Edamam - Food Database API, Nutrition API and Recipe API_files/bot@2x.png">
+							</div>
+							<div class="col-12 col-sm-9 col-md-10">
+								<div class="row row-cols-1 row-cols-md-1 row-cols-lg-2 align-items-stretch g-4">
+									<div class="col-md-10 col-lg-9 text">
+										<div class="px-0 pt-4 pb-md-4">
+											<span>NEW!!!</span> Submit queries to our APIs in a natural language with our new AI Assistant
+										</div>
+									</div>
+									<div class="col-md-2 col-lg-3">
+										<div class="pb-4 pt-sm-0 pt-md-5">
+											<button type="button" class="btn btn-green me-2 px-4">Learn more</button>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</a>
+					<div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5 header-blocks">
+					
+						<div class="col">
+							<div class="card card-cover h-100 overflow-hidden text-white bg-dark-opacity rounded-5 shadow-lg">
+								<div class="d-flex flex-column h-100 p-1 pb-3 text-white text-shadow-1">
+									<h2 class="pt-3 mb-3 lh-1">
+										<span class="title">Nutrition Analysis API</span>
+										<span class="desc">Copy/paste any food recipe and learn its nutrition details in under a second</span>
+									</h2>
+								</div>
+								<a href="https://developer.edamam.com/edamam-nutrition-api" class="btn btn-gray px-4 mb-3">More info</a>
+							</div>
+						</div>
+
+						<div class="col">
+							<div class="card card-cover h-100 overflow-hidden text-white bg-dark-opacity rounded-5 shadow-lg">
+								<div class="d-flex flex-column h-100 p-1 pb-3 text-white text-shadow-1">
+									<h2 class="pt-3 mb-3 lh-1">
+										<span class="title">Food Database API</span>
+										<span class="desc">Get free access to a database with close to 900,000 foods and over 680,000 unique UPC codes</span>
+									</h2>
+								</div>
+								<a href="https://developer.edamam.com/food-database-api" class="btn btn-gray px-4 mb-3">More info</a>
+							</div>
+						</div>
+
+						<div class="col">
+							<div class="card card-cover h-100 overflow-hidden text-white bg-dark-opacity rounded-5 shadow-lg">
+								<div class="d-flex flex-column h-100 p-1 pb-3 text-shadow-1">
+									<h2 class="pt-3 mb-3 lh-1">
+										<span class="title">Recipe Search API</span>
+										<span class="desc">Search over 2.3 million recipes by diets, calories and nutrient ranges</span>
+									</h2>
+								</div>
+								<a href="https://developer.edamam.com/edamam-recipe-api" class="btn btn-gray px-4 mb-3">More info</a>
+							</div>
+						</div>
+					</div>
+					
+					
+					<div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+						<button type="button" class="btn btn-green me-2 px-4 get-started">Signup API</button>
+					</div>
+
+					<div class="row row-cols-1 row-cols-lg-5 align-items-stretch g-4 py-5">
+					
+						<div class="col">
+							<div class="card card-cover h-100 overflow-hidden text-white bg-dark-opacity rounded-5 shadow-lg">
+								<div class="d-flex flex-column h-100 p-1 pb-3 text-white text-shadow-1">
+									<h2 class="pt-3 mb-3 lh-1">
+										<span class="title">2.3M</span>
+										<span class="desc">recipes</span>
+									</h2>
+								</div>
+							</div>
+						</div>
+
+						<div class="col">
+							<div class="card card-cover h-100 overflow-hidden text-white bg-dark-opacity rounded-5 shadow-lg">
+								<div class="d-flex flex-column h-100 p-1 pb-3 text-white text-shadow-1">
+									<h2 class="pt-3 mb-3 lh-1">
+										<span class="title">900K</span>
+										<span class="desc">food items</span>
+									</h2>
+								</div>
+							</div>
+						</div>
+
+						<div class="col">
+							<div class="card card-cover h-100 overflow-hidden text-white bg-dark-opacity rounded-5 shadow-lg">
+								<div class="d-flex flex-column h-100 p-1 pb-3 text-shadow-1">
+									<h2 class="pt-3 mb-3 lh-1">
+										<span class="title">40+</span>
+										<span class="desc">major diets/allergens</span>
+									</h2>
+								</div>
+							</div>
+						</div>
+
+						<div class="col">
+							<div class="card card-cover h-100 overflow-hidden text-white bg-dark-opacity rounded-5 shadow-lg">
+								<div class="d-flex flex-column h-100 p-1 pb-3 text-shadow-1">
+									<h2 class="pt-3 mb-3 lh-1">
+										<span class="title">150+</span>
+										<span class="desc">nutrients</span>
+									</h2>
+								</div>
+							</div>
+						</div>
+
+						<div class="col">
+							<div class="card card-cover h-100 overflow-hidden text-white bg-dark-opacity rounded-5 shadow-lg">
+								<div class="d-flex flex-column h-100 p-1 pb-3 text-shadow-1">
+									<h2 class="pt-3 mb-3 lh-1">
+										<span class="title">200+</span>
+										<span class="desc">chronic conditions</span>
+									</h2>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+
+			<h1 id="nutrition-analysis-block" class="fw-bold lh-1 mt-5 mb-4 text-center page-title">Choose the API you need</h1>
+			<div class="text-center title-line"></div>
+
+			<div class="container col-xxl-8 py-3">
+				<div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+					<div class="col-xs-12 col-lg-6 align-self-start">
+						<img src="./Edamam - Food Database API, Nutrition API and Recipe API_files/home_page_image_1.png" class="d-block mx-auto me-lg-0 img-fluid" alt="" loading="lazy">
+					</div>
+					<div class="col-lg-6 align-self-start">
+						<h1 class="display-7 fw-bold lh-1 mb-4">Nutrition Analysis</h1>
+						<p class="lead mb-1">Copy/paste any food recipe and learn its nutrition details in under a second</p>
+						<a href="https://developer.edamam.com/edamam-nutrition-api" class="more mb-4 d-block">Learn more</a>
+						<div class="col-8 d-grid gap-2 d-md-flex justify-content-md-start">
+							<button type="button" class="btn btn-green px-4 me-md-2 w-100 text-nowrap get-started">Get Started</button>
+							<a href="https://developer.edamam.com/edamam-nutrition-api-demo" class="btn btn-gray px-4 w-100 text-nowrap">Try API Demo</a>
+						</div>
+						<div class="col-8 d-grid gap-2 d-md-flex justify-content-md-start">
+							<a href="https://www.edamam.com/wizard" class="px-3 py-2 mt-3 w-100 more-block position-relative overflow-hidden">
+								<span class="d-block more-title">Analyze you meal</span>
+								<span class="d-block more-subtitle">Nutrition Wizard</span>
+								<i class="bx bxs-chevron-right position-absolute top-50 start-100 translate-middle pe-4"></i>
+							</a>
+						</div>					
+					</div>
+				</div>
+			</div>
+			
+			<div id="food-database-block" class="container col-xxl-8">
+				<div class="content-line"></div>
+			</div>
+
+			<div class="container col-xxl-8 py-3">
+				<div class="row align-items-center g-5 py-5">
+					<div class="col-xs-12 col-lg-6 align-self-start">
+						<img src="./Edamam - Food Database API, Nutrition API and Recipe API_files/home_page_image_2.png" class="d-block mx-auto mx-lg-0 img-fluid" alt="" loading="lazy">
+					</div>	
+					<div class="col-lg-6 align-self-start">
+						<h1 class="display-7 fw-bold lh-1 mb-4">Food Database Lookup</h1>
+						<p class="lead mb-1">Get free access to a database with close to 900,000 foods and over 680,000 unique UPC codes</p>
+						<a href="https://developer.edamam.com/food-database-api" class="more mb-4 d-block">Learn more</a>
+						<div class="col-8 d-grid gap-2 d-md-flex justify-content-md-start">
+							<button type="button" class="btn btn-green px-4 me-md-2 w-100 text-nowrap get-started">Get Started</button>
+							<a href="https://developer.edamam.com/food-database-api-demo" class="btn btn-gray px-4 w-100 text-nowrap">Try API Demo</a>
+						</div>						
+					</div>	
+				</div>
+			</div>
+
+			<div class="container col-xxl-8">
+				<div class="content-line"></div>
+			</div>
+			
+			<div class="container col-xxl-8 py-3">
+				<div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+					<div class="col-xs-12 col-lg-6 align-self-start">
+						<img src="./Edamam - Food Database API, Nutrition API and Recipe API_files/home_page_image_3.png" class="d-block mx-auto me-lg-0 img-fluid" alt="" loading="lazy">
+					</div>
+					<div class="col-lg-6 align-self-start">
+						<h1 class="display-7 fw-bold lh-1 mb-4">Food Entity Extraction</h1>
+						<p class="lead mb-1">Analyze any food text and use our powerful food named entity extraction</p>
+						<a href="https://developer.edamam.com/edamam-nutrition-api" class="more mb-4 d-block">Learn more</a>
+						<div class="col-8 d-grid gap-2 d-md-flex justify-content-md-start">
+							<button type="button" class="btn btn-green px-4 me-md-2 w-100 text-nowrap get-started">Get Started</button>
+							<a href="https://developer.edamam.com/edamam-nutrition-api-demo" class="btn btn-gray px-4 w-100 text-nowrap">Try API Demo</a>
+						</div>				
+					</div>
+				</div>
+			</div>
+
+			<div class="container col-xxl-8">
+				<div class="content-line"></div>
+			</div>
+			
+			<div class="container col-xxl-8 py-3">
+				<div class="row align-items-center g-5 py-5">
+					<div class="col-xs-12 col-lg-6 align-self-start">
+						<img src="./Edamam - Food Database API, Nutrition API and Recipe API_files/home_page_image_4.png" class="d-block mx-auto mx-lg-0 img-fluid" alt="" loading="lazy">
+					</div>	
+					<div class="col-lg-6 align-self-start">
+						<h1 class="display-7 fw-bold lh-1 mb-4">Recipe Licensing</h1>
+						<p class="lead mb-1">License over 180,000 full recipes and nutrition for over 2.3 million web recipes</p>
+						<a href="https://developer.edamam.com/recipe-database-licensing" class="more mb-4 d-block">Learn more</a>
+						<div class="col-4 d-grid gap-2 d-md-flex justify-content-md-start">
+							<a href="javascript:void(0);" onclick="zE.activate();" class="btn btn-green px-4 me-md-2 w-100 text-nowrap">Contact us</a>
+						</div>						
+					</div>	
+				</div>
+			</div>
+
+			<div class="container col-xxl-8">
+				<div class="content-line"></div>
+			</div>
+			
+			<div class="container col-xxl-8 py-3">
+				<div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+					<div class="col-xs-12 col-lg-6 align-self-start">
+						<img src="./Edamam - Food Database API, Nutrition API and Recipe API_files/home_page_image_5.png" class="d-block mx-auto me-lg-0 img-fluid" alt="" loading="lazy">
+					</div>
+					<div class="col-lg-6 align-self-start">
+						<h1 class="display-7 fw-bold lh-1 mb-4">Meal Recommendation Engine</h1>
+						<p class="lead mb-1">Personalized meal recommendations using 28 nutrients and 40 diets/allergies</p>
+						<a href="https://developer.edamam.com/edamam-recipe-api" class="more mb-4 d-block">Learn more</a>
+						<div class="col-8 d-grid gap-2 d-md-flex justify-content-md-start">
+							<button type="button" class="btn btn-green px-4 me-md-2 w-100 text-nowrap get-started">Get Started</button>
+							<a href="https://developer.edamam.com/recipe-demo" class="btn btn-gray px-4 w-100 text-nowrap">Try API Demo</a>
+						</div>				
+					</div>
+				</div>
+			</div>
+
+			<div id="recipe-search-block" class="container col-xxl-8">
+				<div class="content-line"></div>
+			</div>
+			
+			<div class="container col-xxl-8 py-3">
+				<div class="row align-items-center g-5 py-5">
+					<div class="col-xs-12 col-lg-6 align-self-start">
+						<img src="./Edamam - Food Database API, Nutrition API and Recipe API_files/home_page_image_6.png" class="d-block mx-auto mx-lg-0 img-fluid" alt="" loading="lazy">
+					</div>	
+					<div class="col-lg-6 align-self-start">
+						<h1 class="display-7 fw-bold lh-1 mb-4">Recipe Search</h1>
+						<p class="lead mb-1">Search over 2.3 million recipes by diets, calories and nutrient ranges</p>
+						<a href="https://developer.edamam.com/edamam-recipe-api" class="more mb-4 d-block">Learn more</a>
+						<div class="col-8 d-grid gap-2 d-md-flex justify-content-md-start">
+							<button type="button" class="btn btn-green px-4 me-md-2 w-100 text-nowrap get-started">Get Started</button>
+							<a href="https://developer.edamam.com/recipe-demo" class="btn btn-gray px-4 w-100 text-nowrap">Try API Demo</a>
+						</div>
+						<div class="col-8 d-grid gap-2 d-md-flex justify-content-md-start">
+							<a href="https://www.edamam.com/results/recipes/?search=salad" class="px-3 py-2 mt-3 w-100 more-block position-relative overflow-hidden">
+								<span class="d-block more-title">Find something to cook</span>
+								<span class="d-block more-subtitle">Recipe Search</span>
+								<i class="bx bxs-chevron-right position-absolute top-50 start-100 translate-middle pe-4"></i>
+							</a>
+						</div>
+					</div>	
+				</div>
+			</div>
+
+			<h1 class="fw-bold lh-1 mt-5 mb-4 text-center page-title">You are in good company</h1>
+			<div class="text-center title-line"></div>
+
+			<div class="px-1 py-5">
+				<section class="customer-logos slider slick-initialized slick-slider">
+                    <div aria-live="polite" class="slick-list draggable"><div class="slick-track" role="listbox" style="opacity: 1; width: 6192px; transform: translate3d(-2236px, 0px, 0px);"><div class="slide slick-slide slick-cloned" data-slick-index="-10" aria-hidden="true" tabindex="-1" style="width: 132px;"><img src="./Edamam - Food Database API, Nutrition API and Recipe API_files/food.png"></div><div class="slide slick-slide slick-cloned" data-slick-index="-9" aria-hidden="true" tabindex="-1" style="width: 132px;"><img src="./Edamam - Food Database API, Nutrition API and Recipe API_files/virta.png"></div><div class="slide slick-slide slick-cloned" data-slick-index="-8" aria-hidden="true" tabindex="-1" style="width: 132px;"><img src="./Edamam - Food Database API, Nutrition API and Recipe API_files/dailymeal.png"></div><div class="slide slick-slide slick-cloned" data-slick-index="-7" aria-hidden="true" tabindex="-1" style="width: 132px;"><img src="./Edamam - Food Database API, Nutrition API and Recipe API_files/suggestic.png"></div><div class="slide slick-slide slick-cloned" data-slick-index="-6" aria-hidden="true" tabindex="-1" style="width: 132px;"><img src="./Edamam - Food Database API, Nutrition API and Recipe API_files/bsdi.png"></div><div class="slide slick-slide slick-cloned" data-slick-index="-5" aria-hidden="true" tabindex="-1" style="width: 132px;"><img src="./Edamam - Food Database API, Nutrition API and Recipe API_files/foodsmart.png"></div><div class="slide slick-slide slick-cloned" data-slick-index="-4" aria-hidden="true" tabindex="-1" style="width: 132px;"><img src="./Edamam - Food Database API, Nutrition API and Recipe API_files/geno.png"></div><div class="slide slick-slide slick-cloned" data-slick-index="-3" aria-hidden="true" tabindex="-1" style="width: 132px;"><img src="./Edamam - Food Database API, Nutrition API and Recipe API_files/twin.png"></div><div class="slide slick-slide slick-cloned" data-slick-index="-2" aria-hidden="true" tabindex="-1" style="width: 132px;"><img src="./Edamam - Food Database API, Nutrition API and Recipe API_files/spoon.png"></div><div class="slide slick-slide slick-cloned" data-slick-index="-1" aria-hidden="true" tabindex="-1" style="width: 132px;"><img src="./Edamam - Food Database API, Nutrition API and Recipe API_files/core.png"></div><div class="slide slick-slide" data-slick-index="0" aria-hidden="true" tabindex="-1" role="option" aria-describedby="slick-slide00" style="width: 132px;"><img src="./Edamam - Food Database API, Nutrition API and Recipe API_files/amazon.png"></div><div class="slide slick-slide" data-slick-index="1" aria-hidden="true" tabindex="-1" role="option" aria-describedby="slick-slide01" style="width: 132px;"><img src="./Edamam - Food Database API, Nutrition API and Recipe API_files/barilla.png"></div><div class="slide slick-slide" data-slick-index="2" aria-hidden="true" tabindex="-1" role="option" aria-describedby="slick-slide02" style="width: 132px;"><img src="./Edamam - Food Database API, Nutrition API and Recipe API_files/microsoft.png"></div><div class="slide slick-slide slick-current slick-active" data-slick-index="3" aria-hidden="false" tabindex="-1" role="option" aria-describedby="slick-slide03" style="width: 132px;"><img src="./Edamam - Food Database API, Nutrition API and Recipe API_files/nyt.png"></div><div class="slide slick-slide slick-active" data-slick-index="4" aria-hidden="false" tabindex="-1" role="option" aria-describedby="slick-slide04" style="width: 132px;"><img src="./Edamam - Food Database API, Nutrition API and Recipe API_files/kitchen.png"></div><div class="slide slick-slide slick-active" data-slick-index="5" aria-hidden="false" tabindex="-1" role="option" aria-describedby="slick-slide05" style="width: 132px;"><img src="./Edamam - Food Database API, Nutrition API and Recipe API_files/nestle.png"></div><div class="slide slick-slide slick-active" data-slick-index="6" aria-hidden="false" tabindex="-1" role="option" aria-describedby="slick-slide06" style="width: 132px;"><img src="./Edamam - Food Database API, Nutrition API and Recipe API_files/food.png"></div><div class="slide slick-slide slick-active" data-slick-index="7" aria-hidden="false" tabindex="-1" role="option" aria-describedby="slick-slide07" style="width: 132px;"><img src="./Edamam - Food Database API, Nutrition API and Recipe API_files/virta.png"></div><div class="slide slick-slide slick-active" data-slick-index="8" aria-hidden="false" tabindex="-1" role="option" aria-describedby="slick-slide08" style="width: 132px;"><img src="./Edamam - Food Database API, Nutrition API and Recipe API_files/dailymeal.png"></div><div class="slide slick-slide slick-active" data-slick-index="9" aria-hidden="false" tabindex="-1" role="option" aria-describedby="slick-slide09" style="width: 132px;"><img src="./Edamam - Food Database API, Nutrition API and Recipe API_files/suggestic.png"></div><div class="slide slick-slide slick-active" data-slick-index="10" aria-hidden="false" tabindex="-1" role="option" aria-describedby="slick-slide010" style="width: 132px;"><img src="./Edamam - Food Database API, Nutrition API and Recipe API_files/bsdi.png"></div><div class="slide slick-slide slick-active" data-slick-index="11" aria-hidden="false" tabindex="-1" role="option" aria-describedby="slick-slide011" style="width: 132px;"><img src="./Edamam - Food Database API, Nutrition API and Recipe API_files/foodsmart.png"></div><div class="slide slick-slide slick-active" data-slick-index="12" aria-hidden="false" tabindex="-1" role="option" aria-describedby="slick-slide012" style="width: 132px;"><img src="./Edamam - Food Database API, Nutrition API and Recipe API_files/geno.png"></div><div class="slide slick-slide" data-slick-index="13" aria-hidden="true" tabindex="-1" role="option" aria-describedby="slick-slide013" style="width: 132px;"><img src="./Edamam - Food Database API, Nutrition API and Recipe API_files/twin.png"></div><div class="slide slick-slide" data-slick-index="14" aria-hidden="true" tabindex="-1" role="option" aria-describedby="slick-slide014" style="width: 132px;"><img src="./Edamam - Food Database API, Nutrition API and Recipe API_files/spoon.png"></div><div class="slide slick-slide" data-slick-index="15" aria-hidden="true" tabindex="-1" role="option" aria-describedby="slick-slide015" style="width: 132px;"><img src="./Edamam - Food Database API, Nutrition API and Recipe API_files/core.png"></div><div class="slide slick-slide slick-cloned" data-slick-index="16" aria-hidden="true" tabindex="-1" style="width: 132px;"><img src="./Edamam - Food Database API, Nutrition API and Recipe API_files/amazon.png"></div><div class="slide slick-slide slick-cloned" data-slick-index="17" aria-hidden="true" tabindex="-1" style="width: 132px;"><img src="./Edamam - Food Database API, Nutrition API and Recipe API_files/barilla.png"></div><div class="slide slick-slide slick-cloned" data-slick-index="18" aria-hidden="true" tabindex="-1" style="width: 132px;"><img src="./Edamam - Food Database API, Nutrition API and Recipe API_files/microsoft.png"></div><div class="slide slick-slide slick-cloned" data-slick-index="19" aria-hidden="true" tabindex="-1" style="width: 132px;"><img src="./Edamam - Food Database API, Nutrition API and Recipe API_files/nyt.png"></div><div class="slide slick-slide slick-cloned" data-slick-index="20" aria-hidden="true" tabindex="-1" style="width: 132px;"><img src="./Edamam - Food Database API, Nutrition API and Recipe API_files/kitchen.png"></div><div class="slide slick-slide slick-cloned" data-slick-index="21" aria-hidden="true" tabindex="-1" style="width: 132px;"><img src="./Edamam - Food Database API, Nutrition API and Recipe API_files/nestle.png"></div><div class="slide slick-slide slick-cloned" data-slick-index="22" aria-hidden="true" tabindex="-1" style="width: 132px;"><img src="./Edamam - Food Database API, Nutrition API and Recipe API_files/food.png"></div><div class="slide slick-slide slick-cloned" data-slick-index="23" aria-hidden="true" tabindex="-1" style="width: 132px;"><img src="./Edamam - Food Database API, Nutrition API and Recipe API_files/virta.png"></div><div class="slide slick-slide slick-cloned" data-slick-index="24" aria-hidden="true" tabindex="-1" style="width: 132px;"><img src="./Edamam - Food Database API, Nutrition API and Recipe API_files/dailymeal.png"></div><div class="slide slick-slide slick-cloned" data-slick-index="25" aria-hidden="true" tabindex="-1" style="width: 132px;"><img src="./Edamam - Food Database API, Nutrition API and Recipe API_files/suggestic.png"></div></div></div>
+                    
+					
+					
+					
+					
+					
+					
+					
+					
+					
+                    
+                    
+                    
+                    
+                    
+				</section>
+			</div>
+
+			<div id="started" class="px-4 pt-2 pb-5 bottom-bgr">
+				<div class="col-lg-8 mx-auto">
+					<h1 class="fw-bold lh-1 mt-5 mb-4 text-center page-title">Get Started</h1>
+					<div class="text-center title-line"></div>
+					<div class="row g-3 my-4">
+						<div class="col-12" id="get-started-form">							<div class="loader my-5 d-none"></div>
+							<form class="row g-3 my-4 register-api-home bv-form" novalidate="novalidate"><button type="submit" class="bv-hidden-submit" style="display: none; width: 0px; height: 0px;"></button>
+								<div class="col-md-6 form-group">
+									<input type="text" class="form-control input-username" name="username" placeholder="Username" required="" data-bv-field="username">
+									<div class="help-block with-errors"></div>
+								<small class="help-block" data-bv-validator="notEmpty" data-bv-for="username" data-bv-result="NOT_VALIDATED" style="display: none;">The username is required</small><small class="help-block" data-bv-validator="stringLength" data-bv-for="username" data-bv-result="NOT_VALIDATED" style="display: none;">The username must be more than 6 characters long</small><small class="help-block" data-bv-validator="regexp" data-bv-for="username" data-bv-result="NOT_VALIDATED" style="display: none;">The username can only consist of alphabetical and number</small></div>
+								<div class="col-md-6 form-group">
+									<input type="email" class="form-control input-email" name="email" autocomplete="username" placeholder="Email" required="" data-bv-field="email">
+									<div class="help-block with-errors"></div>
+								<small class="help-block" data-bv-validator="notEmpty" data-bv-for="email" data-bv-result="NOT_VALIDATED" style="display: none;">The email address is required</small><small class="help-block" data-bv-validator="emailAddress" data-bv-for="email" data-bv-result="NOT_VALIDATED" style="display: none;">The email address is not a valid</small></div>  
+								<div class="col-md-6 form-group">
+									<input type="password" class="form-control input-password" name="password" autocomplete="new-password" placeholder="Password" required="" data-bv-field="password">
+									<div class="help-block with-errors"></div>
+								<small class="help-block" data-bv-validator="notEmpty" data-bv-for="password" data-bv-result="NOT_VALIDATED" style="display: none;">The password is required</small><small class="help-block" data-bv-validator="stringLength" data-bv-for="password" data-bv-result="NOT_VALIDATED" style="display: none;">The password must have at least 6 characters</small><small class="help-block" data-bv-validator="identical" data-bv-for="password" data-bv-result="NOT_VALIDATED" style="display: none;">The password and its confirm are not the same</small></div>
+								<div class="col-md-6 form-group">
+									<input type="password" class="form-control" name="passwordconfirm" autocomplete="new-password" placeholder="Confirm password" required="" data-bv-field="passwordconfirm">
+									<div class="help-block with-errors"></div>
+								<small class="help-block" data-bv-validator="notEmpty" data-bv-for="passwordconfirm" data-bv-result="NOT_VALIDATED" style="display: none;">The password is required</small><small class="help-block" data-bv-validator="stringLength" data-bv-for="passwordconfirm" data-bv-result="NOT_VALIDATED" style="display: none;">The password must have at least 6 characters</small><small class="help-block" data-bv-validator="identical" data-bv-for="passwordconfirm" data-bv-result="NOT_VALIDATED" style="display: none;">The password and its confirm are not the same</small></div>
+								<div class="col-md-6 form-group">
+									<input type="text" class="form-control input-orgname" name="orgname" placeholder="Organization name" required="" data-bv-field="orgname">
+									<div class="help-block with-errors"></div>
+								<small class="help-block" data-bv-validator="notEmpty" data-bv-for="orgname" data-bv-result="NOT_VALIDATED" style="display: none;">The organization name is required</small></div>
+								<div class="col-md-6 form-group">
+									<select class="form-select input-plans api-plans-home" name="plans" required="" data-bv-field="plans">
+										<option selected="" value="">Choose your plan</option>
+                                        <option disabled="">Nutrition Analysis API:</option>
+                                        <option value="{&quot;applicationPlanId&quot;:&quot;2357355949169&quot;,&quot;servicePlanId&quot;:&quot;2357355820566&quot;}">&nbsp;- Developer</option>
+                                        <option value="{&quot;applicationPlanId&quot;:&quot;2357356416921&quot;,&quot;servicePlanId&quot;:&quot;2357355820566&quot;}">&nbsp;- Enterprise Core</option>
+                                        <option disabled="">Recipe Search API:</option>
+                                        <option value="{&quot;applicationPlanId&quot;:&quot;2357355869577&quot;,&quot;servicePlanId&quot;:&quot;2357355820567&quot;}">&nbsp;- Developer</option>
+                                        <option value="{&quot;applicationPlanId&quot;:&quot;2357356416931&quot;,&quot;servicePlanId&quot;:&quot;2357355820567&quot;}">&nbsp;- Enterprise Core</option>
+										<option value="{&quot;applicationPlanId&quot;:&quot;2357356466375&quot;,&quot;servicePlanId&quot;:&quot;2357355820567&quot;}">&nbsp;- Enterprise Plus</option>
+                                        <option disabled="">Food Database API:</option>
+                                        <option value="{&quot;applicationPlanId&quot;:&quot;2357355947380&quot;,&quot;servicePlanId&quot;:&quot;2357355942325&quot;}">&nbsp;- Developer</option>
+                                        <option value="{&quot;applicationPlanId&quot;:&quot;2357356416932&quot;,&quot;servicePlanId&quot;:&quot;2357355942325&quot;}">&nbsp;- Enterprise Core</option>
+										<option value="{&quot;applicationPlanId&quot;:&quot;2357356466376&quot;,&quot;servicePlanId&quot;:&quot;2357355942325&quot;}">&nbsp;- Enterprise Plus</option>
+                                        <option disabled="">Meal Planner API:</option>
+                                        <option value="{&quot;applicationPlanId&quot;:&quot;2357356441070&quot;,&quot;servicePlanId&quot;:&quot;2555417725632&quot;}">&nbsp;- Developer</option>
+                                        <option value="{&quot;applicationPlanId&quot;:&quot;2357356444775&quot;,&quot;servicePlanId&quot;:&quot;2555417725632&quot;}">&nbsp;- Enterprise Core</option>
+									</select>
+								<small class="help-block" data-bv-validator="notEmpty" data-bv-for="plans" data-bv-result="NOT_VALIDATED" style="display: none;">You need to choose a plan</small></div>
+                                <div class="col-md-12 form-group" id="terms-confirm">
+									<label class="custom-checkbox">
+										<input type="checkbox" name="policy" required="" data-bv-field="policy">
+										<i class="custom-checkbox-check bx"></i>I have read and agree with the <a href="https://www.edamam.com/terms/api" class="more" target="_blank">Terms</a> &amp; <a href="https://www.edamam.com/privacy" class="more" target="_blank">Privacy Policy</a>
+									</label>
+                                <small class="help-block" data-bv-validator="notEmpty" data-bv-for="policy" data-bv-result="NOT_VALIDATED" style="display: none;">Please agree with the Terms &amp; Privacy Policy</small></div>
+                                <div class="col-md-12 mt-1 d-none form-group" id="cart-confirm">
+                                    <label class="custom-checkbox">
+                                        <input type="checkbox" name="card" required="" data-bv-field="card">
+                                        <i class="custom-checkbox-check bx"></i>I Agree to enter a Credit Card upon account creation in order to use the API
+									</label>
+                                <small class="help-block" data-bv-validator="notEmpty" data-bv-for="card" data-bv-result="NOT_VALIDATED" style="display: none;">Please agree to enter a Credit Card upon account creation</small></div>                                  
+                                <div class="col-md-12 err">
+									<div class="help-block with-errors"></div>
+                                </div> 								
+							</form>						</div>
+						<div class="col-12 mt-0">
+							<button type="submit" class="btn btn-green mx-auto d-block px-5" id="signup-api-home">Submit</button>
+						</div>
+					</div>
+				</div>
+			</div></main>
+		<footer class="bg-dark">			<div class="container col-xxl-8 col-md-12">
+				<div class="row py-5">
+					<div class="col-6 col-md-4 col-lg-4">
+						<h5>Recipe search</h5>
+						<div class="pb-0">
+							<a href="https://apps.apple.com/us/app/edamam/id516902296" class="pb-3 d-inline-block"><img src="./Edamam - Food Database API, Nutrition API and Recipe API_files/appstore.png" class="me-3"></a> <a href="https://play.google.com/store/apps/details?id=com.edamam.recipesearch" class="pb-5 d-inline-block"><img src="./Edamam - Food Database API, Nutrition API and Recipe API_files/googleplay.png"></a>
+						</div>
+						<h5>Nutrition Wizard</h5>
+						<div class="pb-5">
+							<a href="https://apps.apple.com/us/app/nutrition-wizard/id1217235395"><img src="./Edamam - Food Database API, Nutrition API and Recipe API_files/appstore.png" class="me-3"></a>
+						</div>
+					</div>
+					<div class="col-6 col-md-3 col-lg-3">
+						<h5>APIs</h5>
+						<ul class="nav flex-column">
+							<li class="nav-item mb-2"><a href="https://developer.edamam.com/edamam-nutrition-api" class="nav-link p-0 text-muted">Nutrition Analysis API</a></li>
+							<li class="nav-item mb-2"><a href="https://developer.edamam.com/food-database-api" class="nav-link p-0 text-muted">Food Database API</a></li>
+							<li class="nav-item mb-2"><a href="https://developer.edamam.com/edamam-recipe-api" class="nav-link p-0 text-muted">Recipe Search API</a></li>
+							<li class="nav-item mb-2"><a href="https://developer.edamam.com/api/faq" class="nav-link p-0 text-muted">FAQ</a></li>
+						</ul>
+					</div>
+					<div class="col-6 col-md-3 col-lg-3">
+						<h5>Try Products</h5>
+						<ul class="nav flex-column">
+							<li class="nav-item mb-2"><a href="https://www.edamam.com/wizard" class="nav-link p-0 text-muted">Nutrition Wizard</a></li>
+							<li class="nav-item mb-2"><a href="https://www.edamam.com/results/recipes/?search=salad" class="nav-link p-0 text-muted">Recipe Search</a></li>
+						</ul>
+					</div>
+					<div class="col-6 col-md-2 col-lg-2">
+						<h5>Follow us</h5>
+						<ul class="nav flex-column bx-ul">
+							<li class="nav-item mb-2"><a href="https://facebook.com/Edamam" class="nav-link p-0 text-muted"><i class="bx bxl-facebook bx-sm bx-border-circle"></i> Facebook</a></li>
+							<li class="nav-item mb-2"><a href="https://twitter.com/#!/EdamamCo" class="nav-link p-0 text-muted"><i class="bx bxl-twitter bx-sm bx-border-circle"></i> Twitter</a></li>
+							<li class="nav-item mb-2"><a href="https://www.linkedin.com/company/edamam/" class="nav-link p-0 text-muted"><i class="bx bxl-linkedin bx-sm bx-border-circle"></i> Linkedin</a></li>
+							<li class="nav-item mb-2"><a href="https://www.pinterest.com/edamam/" class="nav-link p-0 text-muted"><i class="bx bxl-pinterest bx-sm bx-border-circle"></i> Pinterest</a></li>
+						</ul>
+					</div>
+				</div>
+			</div></footer>
+
+		<!-- Modal Signup API-->
+		<div class="modal fade" id="signupAPIModal" tabindex="-1" aria-hidden="true">			<div class="modal-dialog modal-dialog-centered modal-lg">
+				<div class="modal-content">
+					<div class="modal-header d-block">
+						<h1 class="fw-bold lh-1 my-4 text-center page-title">Sign Up</h1>
+						<div class="text-center title-line"></div>
+						<div class="text-center pt-3 fs-6">Choose the APIs you want to sign up</div>
+						<button type="button" class="btn-close position-absolute top-0 end-0 m-3 close-modal" data-bs-dismiss="modal" aria-label="Close"></button>
+					</div>
+					<div class="modal-body">
+						<div class="col-lg-10 mx-auto" id="signup-api-form">							<div class="loader my-5 d-none"></div>
+							<form class="row g-3 my-4 register-api-modal bv-form" novalidate="novalidate"><button type="submit" class="bv-hidden-submit" style="display: none; width: 0px; height: 0px;"></button>
+								<div class="col-md-6 form-group">
+									<input type="text" class="form-control input-username" name="username" placeholder="Username" required="" data-bv-field="username">
+									<div class="help-block with-errors"></div>
+								<small class="help-block" data-bv-validator="notEmpty" data-bv-for="username" data-bv-result="NOT_VALIDATED" style="display: none;">The username is required</small><small class="help-block" data-bv-validator="stringLength" data-bv-for="username" data-bv-result="NOT_VALIDATED" style="display: none;">The username must be more than 6 characters long</small><small class="help-block" data-bv-validator="regexp" data-bv-for="username" data-bv-result="NOT_VALIDATED" style="display: none;">The username can only consist of alphabetical and number</small></div>
+								<div class="col-md-6 form-group">
+									<input type="email" class="form-control input-email" name="email" autocomplete="username" placeholder="Email" required="" data-bv-field="email">
+									<div class="help-block with-errors"></div>
+								<small class="help-block" data-bv-validator="notEmpty" data-bv-for="email" data-bv-result="NOT_VALIDATED" style="display: none;">The email address is required</small><small class="help-block" data-bv-validator="emailAddress" data-bv-for="email" data-bv-result="NOT_VALIDATED" style="display: none;">The email address is not a valid</small></div>  
+								<div class="col-md-6 form-group">
+									<input type="password" class="form-control input-password" name="password" autocomplete="new-password" placeholder="Password" required="" data-bv-field="password">
+									<div class="help-block with-errors"></div>
+								<small class="help-block" data-bv-validator="notEmpty" data-bv-for="password" data-bv-result="NOT_VALIDATED" style="display: none;">The password is required</small><small class="help-block" data-bv-validator="stringLength" data-bv-for="password" data-bv-result="NOT_VALIDATED" style="display: none;">The password must have at least 6 characters</small><small class="help-block" data-bv-validator="identical" data-bv-for="password" data-bv-result="NOT_VALIDATED" style="display: none;">The password and its confirm are not the same</small></div>
+								<div class="col-md-6 form-group">
+									<input type="password" class="form-control" name="passwordconfirm" autocomplete="new-password" placeholder="Confirm password" required="" data-bv-field="passwordconfirm">
+									<div class="help-block with-errors"></div>
+								<small class="help-block" data-bv-validator="notEmpty" data-bv-for="passwordconfirm" data-bv-result="NOT_VALIDATED" style="display: none;">The password is required</small><small class="help-block" data-bv-validator="stringLength" data-bv-for="passwordconfirm" data-bv-result="NOT_VALIDATED" style="display: none;">The password must have at least 6 characters</small><small class="help-block" data-bv-validator="identical" data-bv-for="passwordconfirm" data-bv-result="NOT_VALIDATED" style="display: none;">The password and its confirm are not the same</small></div>
+								<div class="col-md-6 form-group">
+									<input type="text" class="form-control input-orgname" name="orgname" placeholder="Organization name" required="" data-bv-field="orgname">
+									<div class="help-block with-errors"></div>
+								<small class="help-block" data-bv-validator="notEmpty" data-bv-for="orgname" data-bv-result="NOT_VALIDATED" style="display: none;">The organization name is required</small></div>
+								<div class="col-md-6 form-group">
+									<select class="form-select input-plans api-plans-modal" name="plans" required="" data-bv-field="plans">
+										<option selected="" value="">Choose your plan</option>
+                                        <option disabled="">Nutrition Analysis API:</option>
+                                        <option value="{&quot;applicationPlanId&quot;:&quot;2357355949169&quot;,&quot;servicePlanId&quot;:&quot;2357355820566&quot;}">&nbsp;- Developer</option>
+                                        <option value="{&quot;applicationPlanId&quot;:&quot;2357356416921&quot;,&quot;servicePlanId&quot;:&quot;2357355820566&quot;}">&nbsp;- Enterprise Core</option>
+                                        <option disabled="">Recipe Search API:</option>
+                                        <option value="{&quot;applicationPlanId&quot;:&quot;2357355869577&quot;,&quot;servicePlanId&quot;:&quot;2357355820567&quot;}">&nbsp;- Developer</option>
+                                        <option value="{&quot;applicationPlanId&quot;:&quot;2357356416931&quot;,&quot;servicePlanId&quot;:&quot;2357355820567&quot;}">&nbsp;- Enterprise Core</option>
+										<option value="{&quot;applicationPlanId&quot;:&quot;2357356466375&quot;,&quot;servicePlanId&quot;:&quot;2357355820567&quot;}">&nbsp;- Enterprise Plus</option>
+                                        <option disabled="">Food Database API:</option>
+                                        <option value="{&quot;applicationPlanId&quot;:&quot;2357355947380&quot;,&quot;servicePlanId&quot;:&quot;2357355942325&quot;}">&nbsp;- Developer</option>
+                                        <option value="{&quot;applicationPlanId&quot;:&quot;2357356416932&quot;,&quot;servicePlanId&quot;:&quot;2357355942325&quot;}">&nbsp;- Enterprise Core</option>
+										<option value="{&quot;applicationPlanId&quot;:&quot;2357356466376&quot;,&quot;servicePlanId&quot;:&quot;2357355942325&quot;}">&nbsp;- Enterprise Plus</option>
+                                        <option disabled="">Meal Planner API:</option>
+                                        <option value="{&quot;applicationPlanId&quot;:&quot;2357356441070&quot;,&quot;servicePlanId&quot;:&quot;2555417725632&quot;}">&nbsp;- Developer</option>
+                                        <option value="{&quot;applicationPlanId&quot;:&quot;2357356444775&quot;,&quot;servicePlanId&quot;:&quot;2555417725632&quot;}">&nbsp;- Enterprise Core</option>
+									</select>
+								<small class="help-block" data-bv-validator="notEmpty" data-bv-for="plans" data-bv-result="NOT_VALIDATED" style="display: none;">You need to choose a plan</small></div>
+                                <div class="col-md-12 form-group" id="terms-confirm">
+									<label class="custom-checkbox">
+										<input type="checkbox" name="policy" required="" data-bv-field="policy">
+										<i class="custom-checkbox-check bx"></i>I have read and agree with the <a href="https://www.edamam.com/terms/api" class="more" target="_blank">Terms</a> &amp; <a href="https://www.edamam.com/privacy" class="more" target="_blank">Privacy Policy</a>
+									</label>
+                                <small class="help-block" data-bv-validator="notEmpty" data-bv-for="policy" data-bv-result="NOT_VALIDATED" style="display: none;">Please agree with the Terms &amp; Privacy Policy</small></div>
+                                <div class="col-md-12 mt-1 d-none form-group" id="cart-confirm">
+                                    <label class="custom-checkbox">
+                                        <input type="checkbox" name="card" required="" data-bv-field="card">
+                                        <i class="custom-checkbox-check bx"></i>I Agree to enter a Credit Card upon account creation in order to use the API
+									</label>
+                                <small class="help-block" data-bv-validator="notEmpty" data-bv-for="card" data-bv-result="NOT_VALIDATED" style="display: none;">Please agree to enter a Credit Card upon account creation</small></div>                                  
+                                <div class="col-md-12 err">
+									<div class="help-block with-errors"></div>
+                                </div> 								
+							</form>						</div>
+					</div>
+					<div class="modal-footer pt-0">
+						<div class="col-8 mx-auto signup-button">
+							<a href="javascript:void(0);" id="signup-api" class="btn btn-green mx-auto d-block px-5 py-2 mb-2 fit-content">Submit</a>
+						</div>
+						<div class="col-8 mx-auto text-center modal-line pt-4 mb-5">
+							<a href="javascript:void(0);" class="more open-login-modal">Login</a>
+						</div>
+					</div>
+				</div>
+			</div></div>
+		<!-- Modal Signup Service-->
+		<div class="modal fade" id="signupServiceModal" tabindex="-1" aria-hidden="true">			<div class="modal-dialog modal-dialog-centered modal-lg">
+				<div class="modal-content">
+					<div class="modal-header d-block">
+						<h1 class="fw-bold lh-1 my-4 text-center page-title">Sign Up</h1>
+						<div class="text-center title-line"></div>
+						<div class="text-center pt-3 fs-6">Join Edamam with email</div>
+						<button type="button" class="btn-close position-absolute top-0 end-0 m-3 close-modal" data-bs-dismiss="modal" aria-label="Close"></button>
+					</div>
+					<div class="modal-body">
+						<div class="col-8 mx-auto tab-content" id="signup-service-form">							<div class="loader my-5 d-none"></div>
+							<form id="register-service" class="row g-3 my-4 register-service-modal bv-form" novalidate="novalidate"><button type="submit" class="bv-hidden-submit" style="display: none; width: 0px; height: 0px;"></button>
+								<div class="col-12 form-group">
+									<input type="email" class="form-control input-email" name="email" autocomplete="username" placeholder="Email" required="" data-bv-field="email">
+									<div class="help-block with-errors"></div>
+								<small class="help-block" data-bv-validator="notEmpty" data-bv-for="email" data-bv-result="NOT_VALIDATED" style="display: none;">The email address is required</small><small class="help-block" data-bv-validator="emailAddress" data-bv-for="email" data-bv-result="NOT_VALIDATED" style="display: none;">The email address is not a valid</small></div>  
+								<div class="col-12 form-group">
+									<input type="password" class="form-control input-password" name="password" autocomplete="new-password" placeholder="Password" required="" data-bv-field="password">
+									<div class="help-block with-errors"></div>
+								<small class="help-block" data-bv-validator="notEmpty" data-bv-for="password" data-bv-result="NOT_VALIDATED" style="display: none;">The password is required</small><small class="help-block" data-bv-validator="stringLength" data-bv-for="password" data-bv-result="NOT_VALIDATED" style="display: none;">The password must have at least 6 characters</small><small class="help-block" data-bv-validator="identical" data-bv-for="password" data-bv-result="NOT_VALIDATED" style="display: none;">The password and its confirm are not the same</small></div>
+								<div class="col-12 form-group">
+									<input type="password" class="form-control" name="passwordconfirm" autocomplete="new-password" placeholder="Confirm password" required="" data-bv-field="passwordconfirm">
+									<div class="help-block with-errors"></div>
+								<small class="help-block" data-bv-validator="notEmpty" data-bv-for="passwordconfirm" data-bv-result="NOT_VALIDATED" style="display: none;">The password is required</small><small class="help-block" data-bv-validator="stringLength" data-bv-for="passwordconfirm" data-bv-result="NOT_VALIDATED" style="display: none;">The password must have at least 6 characters</small><small class="help-block" data-bv-validator="identical" data-bv-for="passwordconfirm" data-bv-result="NOT_VALIDATED" style="display: none;">The password and its confirm are not the same</small></div>
+                                <div class="col-md-12 form-group" id="terms-confirm">
+									<label class="custom-checkbox">
+										<input type="checkbox" name="policy" required="" data-bv-field="policy">
+										<i class="custom-checkbox-check bx"></i>I have read and agree with the <a href="https://www.edamam.com/terms" class="more" target="_blank">Terms</a> &amp; <a href="https://www.edamam.com/privacy" class="more" target="_blank">Privacy Policy</a>
+									</label>
+                                <small class="help-block" data-bv-validator="notEmpty" data-bv-for="policy" data-bv-result="NOT_VALIDATED" style="display: none;">Please agree with the Terms &amp; Privacy Policy</small></div>                                 
+                                <div class="col-md-12 err">
+									<div class="help-block with-errors"></div>
+                                </div> 								
+							</form></div>
+					</div>
+					<div class="modal-footer pt-0">
+						<div class="col-8 mx-auto signup-button">
+							<a href="javascript:void(0);" id="signup-service" class="btn btn-green mx-auto d-block px-5 py-2 mt-4 mb-2 fit-content">Submit</a>
+						</div>
+						<div class="col-8 mx-auto text-center modal-line pt-4 mb-5">
+							<a href="javascript:void(0);" class="more open-login-modal">Login</a>
+						</div>
+					</div>
+				</div>
+			</div></div>
+		<!-- Modal Login -->
+		<div class="modal fade" id="loginModal" tabindex="-1" aria-hidden="true">			<div class="modal-dialog modal-dialog-centered modal-lg">
+				<div class="modal-content">
+					<div class="modal-header d-block">
+						<h1 class="fw-bold lh-1 my-4 text-center page-title">Sign In</h1>
+						<div class="text-center title-line"></div>
+						<div class="text-center pt-3 fs-6">Choose the APIs or service you want to sign in</div>
+						<button type="button" class="btn-close position-absolute top-0 end-0 m-3 close-modal" data-bs-dismiss="modal" aria-label="Close"></button>
+					</div>
+					<div class="modal-body mt-4">
+						<ul class="col-8 nav nav-pills mb-3 position-absolute top-0 start-50 translate-middle-x bgr-tabs" id="pills-tab" role="tablist">
+							<li class="w-50 nav-item" role="presentation">
+								<button class="w-100 nav-link active" id="pills-api-tab" data-bs-toggle="pill" data-bs-target="#pills-api" type="button" role="tab" aria-controls="pills-api" aria-selected="true">Edamam APIs</button>
+							</li>
+							<li class="w-50 nav-item" role="presentation">
+								<button class="w-100 nav-link" id="pills-service-tab" data-bs-toggle="pill" data-bs-target="#pills-service" type="button" role="tab" aria-controls="pills-service" aria-selected="false">Nutrition Wizard &amp; Recipes</button>
+							</li>
+						</ul>
+						<div class="loader my-5 d-none"></div>
+						<div class="col-8 mx-auto tab-content mt-5" id="pills-tabContent">
+							<div class="tab-pane fade show active" id="pills-api" role="tabpanel" aria-labelledby="pills-api-tab">
+								<form class="row g-3 mt-4 login-api bv-form" action="https://developer.edamam.com/ui/login" method="GET" accept-charset="UTF-8" novalidate="novalidate"><button type="submit" class="bv-hidden-submit" style="display: none; width: 0px; height: 0px;"></button>
+									<div class="col-12 form-group px-0">
+										<input type="text" class="form-control input-email" name="email" placeholder="Username" autocomplete="username" data-bv-field="email">
+										<div class="help-block with-errors"></div>
+									<small class="help-block" data-bv-validator="notEmpty" data-bv-for="email" data-bv-result="NOT_VALIDATED" style="display: none;">The email address is required</small><small class="help-block" data-bv-validator="emailAddress" data-bv-for="email" data-bv-result="NOT_VALIDATED" style="display: none;">The email address is not a valid</small></div>  
+									<div class="col-12 form-group px-0">
+										<input type="password" class="form-control input-password" name="password" placeholder="Password" autocomplete="current-password" data-bv-field="password">
+										<div class="help-block with-errors"></div>
+									<small class="help-block" data-bv-validator="notEmpty" data-bv-for="password" data-bv-result="NOT_VALIDATED" style="display: none;">The password is required</small><small class="help-block" data-bv-validator="stringLength" data-bv-for="password" data-bv-result="NOT_VALIDATED" style="display: none;">The password must have at least 3 characters</small></div>
+									<a href="javascript:void(0);" class="more forgot-pass-api">Forgot your password?</a>
+								</form>	
+							</div>
+							<div class="tab-pane fade" id="pills-service" role="tabpanel" aria-labelledby="pills-service-tab">
+								<form class="row g-3 mt-4 login-service bv-form" novalidate="novalidate"><button type="submit" class="bv-hidden-submit" style="display: none; width: 0px; height: 0px;"></button>
+									<div class="col-12 form-group px-0">
+										<input type="email" class="form-control input-email" placeholder="Email" name="email" autocomplete="username" data-bv-field="email">
+										<div class="help-block with-errors"></div>
+									<small class="help-block" data-bv-validator="notEmpty" data-bv-for="email" data-bv-result="NOT_VALIDATED" style="display: none;">The email address is required</small><small class="help-block" data-bv-validator="emailAddress" data-bv-for="email" data-bv-result="NOT_VALIDATED" style="display: none;">The email address is not a valid</small></div>  
+									<div class="col-12 form-group px-0">
+										<input type="password" class="form-control input-password" placeholder="Password" name="password" autocomplete="current-password" data-bv-field="password">
+										<div class="help-block with-errors"></div>
+									<small class="help-block" data-bv-validator="notEmpty" data-bv-for="password" data-bv-result="NOT_VALIDATED" style="display: none;">The password is required</small><small class="help-block" data-bv-validator="stringLength" data-bv-for="password" data-bv-result="NOT_VALIDATED" style="display: none;">The password must have at least 3 characters</small></div>
+									<a href="javascript:void(0);" class="more forgot-pass-service">Forgot your password?</a>
+								</form>	
+							</div>
+						</div>
+					</div>
+					<div class="modal-footer pt-0">
+						<div class="col-8 mx-auto">
+							<a href="javascript:void(0);" id="login-api" class="btn btn-green mx-auto d-block px-5 py-2 mb-2 fit-content login-button">Submit</a>
+						</div>
+						<div class="col-8 mx-auto text-center modal-line pt-4 mb-5 add-account d-block">
+							New user? <a href="javascript:void(0);" id="create-account" class="more create-account-api">Create an account</a>
+						</div>
+						<div class="col-8 mx-auto text-center modal-line pt-4 mb-5 logout-service d-none">
+							<a href="https://www.edamam.com/logout" class="more">Logout</a>
+						</div>
+						<div class="col-8 mx-auto text-center modal-line pt-4 mb-5 logout-api d-none">
+							<a href="https://developer.edamam.com/logout" class="more">Logout</a>
+						</div>							
+					</div>
+				</div>
+			</div></div>
+		<!-- Modal Forgot -->
+		<div class="modal fade" id="forgotModal" tabindex="-1" aria-hidden="true">			<div class="modal-dialog modal-dialog-centered modal-lg" id="forgot-pass">
+				<div class="modal-content">
+					<div class="modal-header d-block">
+						<h1 class="fw-bold lh-1 my-4 text-center page-title">Forgot Password</h1>
+						<div class="text-center title-line"></div>
+						<div class="text-center pt-3 fs-6">Instructions for resetting the password will be sent to your email</div>
+						<button type="button" class="btn-close position-absolute top-0 end-0 m-3 close-modal" data-bs-dismiss="modal" aria-label="Close"></button>
+					</div>
+					<div class="modal-body">
+						<div class="loader my-5"></div>
+						<div class="col-8 mx-auto tab-content">
+							<form class="row g-3 mt-2" id="forgot-pass-form">
+								<div class="col-12 px-0">
+									<input type="text" class="form-control input-email" name="email" placeholder="Email">
+									<small class="help-block with-errors"></small>
+								</div>
+							</form>					
+						</div>
+					</div>
+					<div class="modal-footer pt-0">
+						<div class="col-8 mx-auto">
+							<a href="javascript:void(0);" class="btn btn-green mx-auto d-block px-5 py-2 mt-4 mb-2 fit-content forgot-button">Submit</a>
+						</div>
+						<div class="col-8 mx-auto text-center modal-line pt-4 mb-5">
+							<a href="javascript:void(0);" class="more open-login-modal">Login</a>
+						</div>
+					</div>
+				</div>
+			</div></div>		
+		<!-- Sidenav -->
+		<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvas" data-bs-keyboard="false" data-bs-backdrop="false">    <div class="offcanvas-header">
+		<div class="profile">
+			<div class="profile-img d-none"><img src="./Edamam - Food Database API, Nutrition API and Recipe API_files/user.png">Hi, <span>Edamam</span></div>
+		</div>
+        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body px-0 pt-0">
+		<div class="sidenav">
+			<div class="navi">
+				<div class="sub-navi">
+					<a class="dropdown-item-text">APIs</a>
+					<a href="https://developer.edamam.com/edamam-nutrition-api" class="nav-link px-3 link-dark">Nutrition Analysis API</a>
+					<a href="https://developer.edamam.com/food-database-api" class="nav-link px-3 link-dark">Food Database API</a>
+					<a href="https://developer.edamam.com/edamam-recipe-api" class="nav-link px-3 link-dark">Recipe Search API</a>
+					<a href="https://www.edamam.com/wizard" class="nav-link pe-3 link-dark">Nutrition Wizard</a>
+					<a href="https://www.edamam.com/recipes/salad" class="nav-link pe-3 link-dark">Recipes</a>
+					<a href="https://www.edamam.com/partners" class="nav-link pe-3 link-dark">Partners</a>
+				</div>
+				<a href="javascript:void(0);" class="nav-link pe-3 link-dark get-started">Signup API</a>
+				<a href="javascript:void(0);" class="nav-link pe-3 link-dark login">Login</a>
+			</div>		
+			<div class="user d-none m-0">
+				<a href="https://www.edamam.com/myrecipes"><i class="bx bx-restaurant"></i> <b>My recipes</b></a>
+				<a href="https://www.edamam.com/wizard"><i class="bx bx-align-left"></i> <b>Analyze Your Meal</b> <span></span></a>
+				<a href="https://www.edamam.com/accounts"><i class="bx bx-cog"></i> <b>Account</b></a>
+				<a href="https://www.edamam.com/logout"><i class="bx bx-log-out"></i> <b>Logout</b></a>
+			</div>
+			<div class="menu">
+				<a href="https://www.edamam.com/about/company"><i class="bx bx-building-house"></i> <b>Company</b></a>
+				<a href="https://www.edamam.com/about/media"><i class="bx bxs-quote-alt-left"></i> <b>Media</b></a>
+				<a href="https://www.edamam.com/terms"><i class="bx bx-file-blank"></i> <b>General Terms</b></a>
+				<a href="https://www.edamam.com/terms/api/"><i class="bx bx-file-blank"></i> <b>API Terms</b></a>
+				<a href="https://www.edamam.com/privacy"><i class="bx bx-lock-alt"></i> <b>Privacy</b></a>
+				<a href="javascript:void(0);" onclick="zE.activate();"><i class="bx bx-mail-send"></i> <b>Contact us</b></a>
+			</div>
+		</div>
+    </div></div>
+
+		<link href="./Edamam - Food Database API, Nutrition API and Recipe API_files/style.css" rel="stylesheet">
+		<!-- Bootstrap Bundle with Popper -->
+		<script src="./Edamam - Food Database API, Nutrition API and Recipe API_files/bootstrap.bundle.min.js" integrity="sha384-kQtW33rZJAHjgefvhyyzcGF3C5TFyBQBA13V1RKPf4uH+bwyzQxZ6CmMZHmNBEfJ" crossorigin="anonymous"></script>
+		<script src="./Edamam - Food Database API, Nutrition API and Recipe API_files/slick.js"></script>
+		<script src="./Edamam - Food Database API, Nutrition API and Recipe API_files/cookie.js"></script>
+		<script src="./Edamam - Food Database API, Nutrition API and Recipe API_files/general.js"></script>
+		<script src="./Edamam - Food Database API, Nutrition API and Recipe API_files/bootstrapValidator.min.js"></script>
+		<script>
+			window.addEventListener('load',function(){
+			  var x = 0;
+			  var myVar = setInterval(function(){
+				if(x == 0){
+				  if(jQuery('.page-title:contains("Thank you!")').is(":visible"))
+				  {
+					gtag('event', 'Signup_API');
+					clearInterval(myVar);
+					x = 1;
+				  }
+				}
+			  }, 1000);
+			  });
+		</script>
+	
+<iframe data-product="web_widget" title="No content" role="presentation" tabindex="-1" allow="microphone *" aria-hidden="true" src="./Edamam - Food Database API, Nutrition API and Recipe API_files/saved_resource.html" style="width: 0px; height: 0px; border: 0px; position: absolute; top: -9999px;"></iframe><script type="text/javascript" id="">(function(b,h,n,v){var p={elements:[],minHeight:0,percentage:!0,testing:!1},k=b(h),e=[];b.scrollDepth=function(d){function m(a,c,f){d.testing?b("#console").html(a+": "+c):"undefined"!==typeof dataLayer&&dataLayer.push({event:"ScrollDistance",eventCategory:"page-scroll",eventAction:a,eventLabel:c,eventNonInteraction:!0})}function q(a,c,f){b.each(a,function(a,g){-1===b.inArray(a,e)&&c>=g&&(m("Percentage",a,f),e.push(a))})}function r(a,c,f){b.each(a,function(a,g){-1===b.inArray(g,e)&&b(g).length&&c>=
+b(g).offset().top&&(m("Elements",g,f),e.push(g))})}function t(a,c){var b,d,g,e=null,l=0,k=function(){l=new Date;e=null;g=a.apply(b,d)};return function(){var f=new Date;l||(l=f);var h=c-(f-l);b=this;d=arguments;0>=h?(clearTimeout(e),e=null,l=f,g=a.apply(b,d)):e||(e=setTimeout(k,h));return g}}var u=+new Date;d=b.extend({},p,d);b(n).height()<d.minHeight||(m("Percentage","Baseline"),k.on("scroll.scrollDepth",t(function(){var a=b(n).height(),c=h.innerHeight?h.innerHeight:k.height();c=k.scrollTop()+c;a=
+{"25%":parseInt(.25*a,10),"50%":parseInt(.5*a,10),"75%":parseInt(.75*a,10),"100%":a-1};var f=+new Date-u;e.length>=4+d.elements.length?k.off("scroll.scrollDepth"):(d.elements&&r(d.elements,c,f),d.percentage&&q(a,c,f))},500)))}})(jQuery,window,document);jQuery.scrollDepth();</script><iframe allow="join-ad-interest-group" data-tagging-id="AW-123456" data-load-time="1709967464887" height="0" width="0" style="display: none; visibility: hidden;" src="./Edamam - Food Database API, Nutrition API and Recipe API_files/123456.html"></iframe><script type="text/javascript" id="">!function(b,e,f,g,a,c,d){b.fbq||(a=b.fbq=function(){a.callMethod?a.callMethod.apply(a,arguments):a.queue.push(arguments)},b._fbq||(b._fbq=a),a.push=a,a.loaded=!0,a.version="2.0",a.queue=[],c=e.createElement(f),c.async=!0,c.src=g,d=e.getElementsByTagName(f)[0],d.parentNode.insertBefore(c,d))}(window,document,"script","https://connect.facebook.net/en_US/fbevents.js");fbq("init","123456789");fbq("track","PageView");</script><div id="batBeacon874298343071" style="width: 0px; height: 0px; display: none; visibility: hidden;"><img id="batBeacon662424375483" width="0" height="0" alt="" src="./Edamam - Food Database API, Nutrition API and Recipe API_files/0" style="width: 0px; height: 0px; display: none; visibility: hidden;"></div><div><iframe title="Opens a widget where you can find more information" id="launcher" tabindex="0" style="color-scheme: light; width: 136px; height: 50px; padding: 0px; margin: 10px 20px; position: fixed; bottom: 0px; overflow: visible; opacity: 1; border: 0px; z-index: 999998; transition-duration: 250ms; transition-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1); transition-property: opacity, top, bottom; right: 0px;" src="./Edamam - Food Database API, Nutrition API and Recipe API_files/saved_resource(1).html"></iframe></div></body><grammarly-desktop-integration data-grammarly-shadow-root="true"><template shadowrootmode="open"><style>
+      div.grammarly-desktop-integration {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        padding: 0;
+        margin: -1px;
+        overflow: hidden;
+        clip: rect(0, 0, 0, 0);
+        white-space: nowrap;
+        border: 0;
+        -moz-user-select: none;
+        -webkit-user-select: none;
+        -ms-user-select:none;
+        user-select:none;
+      }
+
+      div.grammarly-desktop-integration:before {
+        content: attr(data-content);
+      }
+    </style><div aria-label="grammarly-integration" role="group" tabindex="-1" class="grammarly-desktop-integration" data-content="{&quot;mode&quot;:&quot;limited&quot;,&quot;isActive&quot;:false,&quot;isUserDisabled&quot;:false}"></div></template></grammarly-desktop-integration></html>
