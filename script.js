@@ -24,6 +24,7 @@ document.addEventListener("search", () => {
   if (searchQuery === "") {
     searchResult.innerHTML = null;
     pagination.innerHTML = "";
+    currentPage = 1;
   }
 });
 
